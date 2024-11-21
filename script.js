@@ -20,7 +20,6 @@ let choices = document.querySelectorAll(".choice");
 const playerScoreEl = document.getElementById("playerScoreEl");
 const compScoreEl = document.getElementById("compScoreEl");
 
-const bestOf = 10;
 let playerScore = 0;
 let compScore = 0;
 
@@ -71,5 +70,15 @@ const compChoice = function () {
   let randomNum = Math.floor(Math.random() * compChoices.length);
   return compChoices[randomNum];
 };
+
+const resetGame = function () {
+  playerScore = 0;
+  compScore = 0;
+
+  playerScoreEl.innerText = 0;
+  compScoreEl.innerText = 0;
+};
+
+resetGameBtn.addEventListener("click", resetGame);
 
 playerChoice();
