@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+.disabled {
+  pointer-events: none;
+  user-select: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* a {
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
+  font-family: "Quicksand", Arial, sans-serif;
+}
+
+body {
+  height: 100%;
+  background: rgba(199, 48, 40, 0.8);
+  background: linear-gradient(130deg, rgba(199, 48, 40, 0.8) 25%, rgba(223, 116, 45, 0.8) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3f3f3f;
+}
+body #wrapper {
+  height: 90vh;
+  max-width: 90%;
+  aspect-ratio: 1;
+  background: #f1f1f1;
+  border-radius: 3%;
+  box-shadow: -10px 10px 15px -3px rgba(0, 0, 0, 0.2);
+  padding: 60px 30px;
+}
+body #wrapper h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+body #wrapper .choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  margin: 40px;
+  flex-wrap: wrap;
+}
+body #wrapper .choices li {
+  list-style-type: none;
+  background: #fff;
+  border-radius: 7%;
+  transition: 0.15s;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 7px 15px -3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+body #wrapper .choices li:hover {
+  scale: 0.9;
+}
+body #wrapper .choices li img {
+  max-height: 150px;
+}
+body #wrapper #messageBox {
+  text-align: center;
+  margin: 0 0 30px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+body #wrapper .keep-score {
+  margin: 0 0 40px 0;
+}
+body #wrapper .keep-score p {
+  text-align: center;
+}
+body #wrapper .keep-score p span {
+  font-weight: 700;
+}
+body #wrapper .controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+body #wrapper .controls a {
+  width: 180px;
+  height: 60px;
+  border-radius: 50px;
+  display: block;
+  line-height: 60px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: 0.15;
+}
+body #wrapper .controls a:active {
+  scale: 0.9;
+  box-shadow: 0px 7px 15px -3px rgba(0, 0, 0, 0.4);
+}
+body #wrapper .controls a:nth-of-type(1) {
+  background: #28a745;
+}
+body #wrapper .controls a:nth-of-type(2) {
+  background: #007bff;
+}
+
+/*# sourceMappingURL=style.css.map */
