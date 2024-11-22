@@ -62,8 +62,6 @@ const playRound = function (playerSelection, compSelection) {
     compScore++;
     compScoreEl.innerText = compScore;
   }
-  console.log(playerSelection, compSelection);
-  console.log(`playerscore: ${playerScore} === compScore: ${compScore}`);
 };
 
 const compChoice = function () {
